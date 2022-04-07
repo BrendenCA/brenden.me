@@ -3,9 +3,10 @@ export const Data = {
     name: "Brenden Carvalho",
     ocupation: "Full Stack Software Developer",
     location: "Dubai, UAE",
-    email: "bWVAYnJlbmRlbi5tZQ==",
+    email: "aW5mb0BicmVuZGVuLm1l",
     telephone: "Kzk3MS01MC00NTE4NTc1",
     image: "images/profile.jpg",
+    resumePdf: "/Brenden Carvalho.pdf"
   },
   aboutMe: {
     label: "About Me",
@@ -47,9 +48,9 @@ export const Data = {
         className: "bxl-github",
       },
       // {
-      //   label: "Maaato",
-      //   name: "twiiter",
-      //   url: "https://twitter.com/I_Maaato",
+      //   label: "Twitter",
+      //   name: "twitter",
+      //   url: "https://twitter.com/",
       //   className: "bxl-twitter",
       // },
     ],
@@ -87,7 +88,7 @@ export const Data = {
         institution: "Goa University, India - Percentage: 68.82%",
       }
     ],
-    proyects: [
+    projects: [
       {
         name: "Meal-kit Delivery System",
         company: "",

@@ -97,7 +97,7 @@ body.dark-theme {
 /*========== Options button ==========*/
 .change-theme {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 2.2rem;
   display: flex;
   color: var(--text-color);
@@ -111,7 +111,7 @@ body.dark-theme {
 
 .enable-snow {
   position: absolute;
-  top: 2.2rem;
+  top: 4rem;
   left: 0;
   font-size: 1.2rem;
   color: var(--text-color);
@@ -119,6 +119,26 @@ body.dark-theme {
 }
 
 .enable-snow:hover {
+  color: var(--title-color);
+}
+
+.download-pdf {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 2.2rem;
+  right: 0;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: var(--small-font-size);
+}
+
+.download-pdf-icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+.download-pdf:hover {
   color: var(--title-color);
 }
 
@@ -175,7 +195,7 @@ body.dark-theme {
     width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--body-color);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -5px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: var(--z-fixed);
     transition: 0.3s;

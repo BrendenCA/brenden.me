@@ -8,9 +8,13 @@ export const Profile = ({
   email,
   telephone,
   image,
+  resumePdf
 }) => {
   email = window.atob(email);
   telephone = window.atob(telephone);
+  const _mailTo = () => {
+    window.location = `mailto:${email}`;
+  }
   return (
     <section className="home" id="home">
       <div className="home__container section bd-grid">
@@ -26,7 +30,7 @@ export const Profile = ({
           <span className="home__information">
             <i className="bx bx-map home__icon" /> {location}
           </span>
-          <span className="home__information">
+          <span className="home__information" onClick={_mailTo}>
             <i className="bx bx-envelope home__icon" /> {email}
           </span>
           <span className="home__information">
@@ -34,7 +38,7 @@ export const Profile = ({
           </span>
         </div>
       </div>
-      <Options />
+      <Options resumePdf={resumePdf} />
     </section>
   );
 };

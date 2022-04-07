@@ -1,12 +1,12 @@
 import React from "react";
 import { Description } from "./Description";
 
-export const Proyects = ({ proyects, menu }) => {
+export const Projects = ({ projects, menu }) => {
   return (
-    <section className="proyects-experience section" id="proyects">
-      <h2 className="section-title">{ menu.find((i) => i.section === '#proyects').label }</h2>
+    <section className="projects-experience section" id="projects">
+      <h2 className="section-title">{ menu.find((i) => i.section === '#projects').label }</h2>
       <div className="experience__container bd-grid">
-        {proyects.map((proyect) => (
+        {projects.map((proyect) => (
           <Proyect key={proyect.company} {...proyect} />
         ))}
       </div>

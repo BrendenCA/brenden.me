@@ -23,7 +23,7 @@ const Work = ({ title, period, company, description }) => {
       <div className="experience__data bd-grid">
         <h3 className="experience__title">{title}</h3>
         <span className="experience__company">
-          {period} | {company}
+          {company} | {period}
         </span>
         {description.map((desc, i) => <Description key={i} desc={desc} />)}
       </div>

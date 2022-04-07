@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { Profile } from "../Components/Profile";
 import { Academic } from "../Components/Academic";
 import { Skills } from "../Components/Skills";
-import { Proyects } from "../Components/Proyects";
+import { Projects } from "../Components/Projects";
 import { Works } from "../Components/Works";
 import { SocialMedia } from "../Components/SocialMedia";
 import { AboutMe } from "../Components/AboutMe";
@@ -41,7 +41,7 @@ export const Resume = () => {
           <div className="resume__right">
             <Works works={experience.works} menu={menuSchema.menu} />
             <Academic academic={experience.academic} menu={menuSchema.menu} />
-            <Proyects proyects={experience.proyects} menu={menuSchema.menu} />
+            <Projects projects={experience.projects} menu={menuSchema.menu} />
           </div>
         </div>
       </main>

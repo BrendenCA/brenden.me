@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Particles from "react-particles-js";
 import { ParticlesParams } from "../Schemas/Particles";
 
-export const Options = () => {
+export const Options = ({ resumePdf }) => {
   var { lsTheme, lsIcon, lsSnow } = "";
   try {
     lsTheme = localStorage.getItem("theme");
@@ -31,6 +31,9 @@ export const Options = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
     icon === "bx-sun" ? setIcon("bx-moon") : setIcon("bx-sun");
   };
+  const _downloadPdf = () => {
+    window.open(resumePdf, "_blank");
+  }
 
   return (
     <div className="home__options">
@@ -49,6 +52,12 @@ export const Options = () => {
         id="theme-button"
         onClick={_toggleTheme}
       />
+      {!!resumePdf ? <span class="download-pdf" title="Download Resume PDF" onClick={_downloadPdf}>
+        <i
+          className={`bx bx-download download-pdf-icon`}
+          id="download-pdf"
+        />PDF
+      </span> : ''}
     </div>
   );
 };
