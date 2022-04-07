@@ -1,9 +1,9 @@
 import React from "react";
 import { Description } from "./Description";
-export const Works = ({ works }) => {
+export const Works = ({ works, menu }) => {
   return (
     <section className="work-experience section" id="experience">
-      <h2 className="section-title">Experiencia</h2>
+      <h2 className="section-title">{ menu.find((i) => i.section === '#experience').label }</h2>
       <div className="experience__container bd-grid">
         {works.map((work) => (
           <Work key={work.company} {...work} />
@@ -25,7 +25,7 @@ const Work = ({ title, period, company, description }) => {
         <span className="experience__company">
           {period} | {company}
         </span>
-        {description.map((desc,i) => <Description  key={i} desc={desc}/>)}
+        {description.map((desc, i) => <Description key={i} desc={desc} />)}
       </div>
     </div>
   );

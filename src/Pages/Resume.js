@@ -28,7 +28,7 @@ export const Resume = () => {
 
   return (
     <>
-      <SEO  {...profile} {...aboutMe}/>
+      <SEO  {...profile} {...aboutMe} />
       {!matches && <Menu {...menuSchema} />}
       <main className="l-main bd-container" id="bd-container">
         <div className="resume" id="area-cv">
@@ -39,9 +39,9 @@ export const Resume = () => {
             <SocialMedia {...socialMedia} />
           </div>
           <div className="resume__right">
-            <Works {...experience} />
-            <Academic {...experience} />
-            <Proyects {...experience} />
+            <Works works={experience.works} menu={menuSchema.menu} />
+            <Academic academic={experience.academic} menu={menuSchema.menu} />
+            <Proyects proyects={experience.proyects} menu={menuSchema.menu} />
           </div>
         </div>
       </main>

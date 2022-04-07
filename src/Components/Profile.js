@@ -9,6 +9,8 @@ export const Profile = ({
   telephone,
   image,
 }) => {
+  email = window.atob(email);
+  telephone = window.atob(telephone);
   return (
     <section className="home" id="home">
       <div className="home__container section bd-grid">

@@ -1,10 +1,10 @@
 import React from "react";
 import { Description } from "./Description";
 
-export const Proyects = ({ proyects }) => {
+export const Proyects = ({ proyects, menu }) => {
   return (
     <section className="proyects-experience section" id="proyects">
-      <h2 className="section-title">Proyectos</h2>
+      <h2 className="section-title">{ menu.find((i) => i.section === '#proyects').label }</h2>
       <div className="experience__container bd-grid">
         {proyects.map((proyect) => (
           <Proyect key={proyect.company} {...proyect} />
@@ -23,7 +23,7 @@ const Proyect = ({ name, company, period, description }) => {
       </div>
       <div className="experience__data bd-grid">
         <h3 className="experience__title">
-          {name} - {company}
+          {name}{!!company ? ` - ${company}` : ''}
         </h3>
         <span className="experience__proyect">{period}</span>
         {description.map((desc, i) => <Description key={i} desc={desc} />)}
