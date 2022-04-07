@@ -382,6 +382,16 @@ body.dark-theme {
   color: var(--title-color);
 }
 
+.experience__description {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.experience__description>i {
+  margin-top: 0.55rem;
+  font-size: 5px;
+}
+
 .education__year {
   font-size: var(--smaller-font-size);
 }
