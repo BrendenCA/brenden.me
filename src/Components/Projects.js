@@ -6,8 +6,8 @@ export const Projects = ({ projects, menu }) => {
     <section className="projects-experience section" id="projects">
       <h2 className="section-title">{ menu.find((i) => i.section === '#projects').label }</h2>
       <div className="experience__container bd-grid">
-        {projects.map((proyect) => (
-          <Proyect key={proyect.company} {...proyect} />
+        {projects.map((project) => (
+          <Proyect key={project.company} {...project} />
         ))}
       </div>
     </section>
@@ -25,7 +25,7 @@ const Proyect = ({ name, company, period, description }) => {
         <h3 className="experience__title">
           {name}{!!company ? ` - ${company}` : ''}
         </h3>
-        <span className="experience__proyect">{period}</span>
+        <span className="experience__project">{period}</span>
         {description.map((desc, i) => <Description key={i} desc={desc} />)}
       </div>
     </div>
