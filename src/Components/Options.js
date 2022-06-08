@@ -52,7 +52,7 @@ export const Options = ({ resumePdf }) => {
         id="theme-button"
         onClick={_toggleTheme}
       />
-      {!!resumePdf ? <span class="download-pdf" title="Download Resume PDF" onClick={_downloadPdf}>
+      {!!resumePdf ? <span className="download-pdf" title="Download Resume PDF" onClick={_downloadPdf}>
         <i
           className={`bx bx-download download-pdf-icon`}
           id="download-pdf"

@@ -7,14 +7,14 @@ export const Projects = ({ projects, menu }) => {
       <h2 className="section-title">{ menu.find((i) => i.section === '#projects').label }</h2>
       <div className="experience__container bd-grid">
         {projects.map((project) => (
-          <Proyect key={project.company} {...project} />
+          <Project key={project.company} {...project} />
         ))}
       </div>
     </section>
   );
 };
 
-const Proyect = ({ name, company, period, description }) => {
+const Project = ({ name, company, period, description }) => {
   return (
     <div className="experience__content">
       <div className="experience__time">
