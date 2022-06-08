@@ -19,17 +19,17 @@ export const Data = {
     technicalLabel: "Technologies",
     softLabel: "Skills",
     technicalSkills: [
-      "JavaScript, TypeScript",
+      "NextJS, React, TypeScript",
       "C# .NET MVC",
       "Python",
-      "PHP"
+      "PHP",
+      "C/C++"
     ],
     softSkills: [
-      "Docker",
-      "BASH Shell",
-      "SQL",
-      "XPath",
-      "Git",
+      "Docker, Compose",
+      "Kubernetes, Helm",
+      "GH Actions, Azure Pipelines",
+      "Git, SQL",
     ],
   },
   socialMedia: {
@@ -62,16 +62,20 @@ export const Data = {
         period: "Feb. 2021 - Present",
         company: "PwC, Dubai",
         description: [
-          "Developed multiple complex services for TAMM, Abu Dhabi.",
-          "Integrated with muliple APIs from client side systems",
-          "Closely communicated with clients to understand their requirements.",
-          "Used JS, TS and internal tools for frontend development.",
-          "Backend services were implemented using ExpressJS.",
+          "Developed a Map web-app for Saudi Tourism Authority",
+          "Worked with NextJS, React with TS for frontend",
+          "Integrated with Google Maps JS API and GeoJSON",
+          "Developed CI/CD pipeline using Github Actions, Oracle Cloud Kubernetes cluster",
           "",
-          "Developed a web-app for events management for Saudi Tourism Authority.",
-          "Used Telerik Sifefinity, Microsoft Dynamics CRM.",
-          "Frontend was based on C# ASP.NET MVC with Razor templating.",
-          "Backend services were implemented using CRM SDK and The Portal Connector APIs.",
+          "Developed multiple complex form services for TAMM, Abu Dhabi",
+          "Closely communicated with clients to understand their requirements",
+          "Integrated with multiple APIs from client side systems",
+          "Used React with TS and internal tools for frontend and NodeJS for backend",
+          "",
+          "Developed a web-app for events management for Saudi Tourism Authority",
+          "Frontend was based on C# ASP.NET MVC with Razor templating",
+          "Backend services were implemented using CRM SDK and The Portal Connector APIs",
+          "Implemented on Telerik Sifefinity, Microsoft Dynamics CRM",
 
         ],
       }
@@ -94,9 +98,9 @@ export const Data = {
         company: "",
         period: "July 2019",
         description: [
-          "Full Ecommerce site with Support tickets, Order Tracking, Notifications was implemented.",
-          "Used Laravel (PHP MVC framework), MySQL, S3 for asset storage and Heroku for CI/CD.",
-          "Python with XPath was also used for web scraping."
+          "Full Ecommerce site with Support tickets, Order Tracking, Notifications was implemented",
+          "Used Laravel (PHP MVC framework), MySQL, S3 for asset storage and Heroku for CI/CD",
+          "Python with XPath was also used for web scraping"
         ],
       }
     ],

@@ -15,6 +15,9 @@ export const Profile = ({
   const _mailTo = () => {
     window.location = `mailto:${email}`;
   }
+  const _startCall = () => {
+    window.location = `tel:${telephone}`;
+  }
   return (
     <section className="home" id="home">
       <div className="home__container section bd-grid">
@@ -33,7 +36,7 @@ export const Profile = ({
           <span className="home__information" onClick={_mailTo}>
             <i className="bx bx-envelope home__icon" /> {email}
           </span>
-          <span className="home__information">
+          <span className="home__information" onClick={_startCall}>
             <i className="bx bx-phone home__icon" /> {telephone}
           </span>
         </div>
