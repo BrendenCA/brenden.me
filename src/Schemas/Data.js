@@ -64,7 +64,8 @@ export const Data = {
         description: [
           "Developed a Map web-app for Saudi Tourism Authority",
           "Worked with NextJS, React with TS for frontend",
-          "Integrated with Google Maps JS API and GeoJSON",
+          "Integrated with Google Maps JS API",
+          "Implemented WebGL scenes on Google Maps using ThreeJS",
           "Developed CI/CD pipeline using Github Actions, Oracle Cloud Kubernetes cluster",
           "",
           "Developed multiple complex form services for TAMM, Abu Dhabi",
@@ -94,7 +95,7 @@ export const Data = {
     ],
     projects: [
       {
-        name: "Meal-kit Delivery System",
+        name: "Meal-kit Delivery System - https://mealbasket.in",
         company: "",
         period: "July 2019",
         description: [
